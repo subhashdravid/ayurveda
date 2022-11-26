@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>ayurveda</title>
+    <script>
+      // loader code
+      window.addEventListener("load", () => {
+        const a = document.getElementById("loader");
+
+        a.style.display = "none";
+      });
+    </script>
+  </head>
+  <body>
+    <!-- preloader -->
+    <div id="loader"></div>
+
+    <div id="detailbox">
+      <span id="close">X</span>
+      <img
+        id="detailimg"
+        src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+        alt=""
+      />
+    </div>
+
+    <header>
+      <div id="logo">
+        <img src="./assets/logo.png" alt="logo" />
+        <span>ayurveda<b>.</b></span>
+      </div>
+      <nav>
+        <a href="#home">home</a><a href="#about">about</a
+        ><a href="#feedback">feedback</a>
+      </nav>
+      <div class="themebox">
+        <img id="themeimg" src="./assets/moon.png" alt="" />
+      </div>
+    </header>
+
+    <main>
+      <div class="bg-wrapper">
+        <section class="hero-section section">
+          <div class="data">
+            <h1>
+              hello friends , living with <br />
+              nature
+            </h1>
+
+            <div class="btn">lets join ayurveda</div>
+          </div>
+        </section>
+      </div>
+
+      <section class="section product-section">
+        <h2 class="sub-title">products</h2>
+        <div class="galarry">
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+              alt=""
+              onclick="openimgbox(this.src)"
+            />
+          </figure>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1646229083927-7cc441c0e445?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
+              alt=""
+              onclick="openimgbox(this.src)"
+            />
+          </figure>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1591213595166-82c13a93b1c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+              alt=""
+              onclick="openimgbox(this.src)"
+            />
+          </figure>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt=""
+              onclick="openimgbox(this.src)"
+            />
+          </figure>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+              alt=""
+              onclick="openimgbox(this.src)"
+            />
+          </figure>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1646229083927-7cc441c0e445?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
+              alt=""
+              onclick="openimgbox(this.src)"
+            />
+          </figure>
+         
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1591213595166-82c13a93b1c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+              alt=""
+              onclick="openimgbox(this.src)"
+            />
+          </figure>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt=""
+              onclick="openimgbox(this.src)"
+            />
+          </figure>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt=""
+              onclick="openimgbox(this.src)"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="map">
+
+        </section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29531.754375444598!2d70.74919517910153!3d22.29808450000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca061978af0f%3A0x6bfca3648e22fae1!2sShree%20H%20N%20Shukla%20College%20Of%20I%20T%20%26%20Management!5e0!3m2!1sen!2sin!4v1669473693985!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+
+      <section class="section section-form">
+        <h2 class="sub-title">feedback form</h2>
+        <form action="#" autocomplete="off">
+          <div class="inp">
+            <label for="name">full name</label>
+          <input type="text" id="name" placeholder="enter your name">
+          </div>
+          <div class="inp">
+            <label for="email">email</label>
+<input type="text" id=
+'email' placeholder="enter your email address">
+          </div>
+          <div class="inp">
+            <label for="message">message</label>
+            <textarea  name="message" id="messsage" placeholder="enter your message"></textarea>
+          </div>
+
+          <button class="submit">send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="social-icons">
+        <div class="social">
+          <a href="#">
+            <img src="./assets/icons8-instagram-100.png" alt="" />
+          </a>
+          <a href="#">
+            <img src="./assets/icons8-discord-100.png" alt="" />
+          </a>
+          <a href="#">
+            <img src="./assets/icons8-facebook-100.png" alt="" />
+          </a>
+          <a href="#">
+            <img src="./assets/icons8-youtube-100.png" alt="" />
+          </a>
+          <a href="#">
+            <img src="./assets/icons8-whatsapp-100.png" alt="" />
+          </a>
+        </div>
+      </div>
+      <p>
+        this website is designed and developed by subhash s dravid from 2022 to
+        2022
+      </p>
+    </footer>
+ <script src="./js/index.js"></script>
+  </body>
+</html>
